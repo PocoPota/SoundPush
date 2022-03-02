@@ -1,0 +1,4 @@
+itemNum=>[Number] (効果音の設定数。)
+itemLink1=>[String] (アップされた効果音のパス)
+itemTitle1=>[String] (設定された効果音のタイトル)
+itemColor1=>[String] (設定された効果音のカラー)

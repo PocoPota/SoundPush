@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto&display=swap");
+body {
+  margin: 0;
+}
+
+img {
+  vertical-align: top;
+}
+
+* {
+  font-family: "Roboto", "Noto Sans JP", sans-serif;
+}
+
+body {
+  background-color: aliceblue;
+}
+body #top {
+  display: flex;
+  align-items: center;
+}
+body #top #sound-btns {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+body #top #sound-btns label {
+  display: flex;
+  width: 170px;
+  height: 170px;
+  border-radius: 8px;
+  user-select: none;
+  justify-content: center;
+  align-items: center;
+}
+body #top #sound-btns label:hover {
+  cursor: pointer;
+}
+body #top #sound-btns label input {
+  display: none;
+}
+body #edit #sound-edit .one-se-edit .se-colors {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+body #edit #sound-edit .one-se-edit .se-colors label {
+  width: 29px;
+  height: 13px;
+  display: flex;
+  align-items: center;
+}
+body #edit #sound-edit .one-se-edit .se-colors label input {
+  margin: 0;
+}
+body #edit #sound-edit .one-se-edit .se-colors label input:after {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  margin-left: 15px;
+}
+body #edit #sound-edit .one-se-edit .se-colors label:nth-child(1) input:after {
+  background-color: #ffa3a3;
+}
+body #edit #sound-edit .one-se-edit .se-colors label:nth-child(2) input:after {
+  background-color: #ffa3d1;
+}
+body #edit #sound-edit .one-se-edit .se-colors label:nth-child(3) input:after {
+  background-color: #ffa3ff;
+}
+body #edit #sound-edit .one-se-edit .se-colors label:nth-child(4) input:after {
+  background-color: #d1a3ff;
+}
+body #edit #sound-edit .one-se-edit .se-colors label:nth-child(5) input:after {
+  background-color: #a3a3ff;
+}
+body #edit #sound-edit .one-se-edit .se-colors label:nth-child(6) input:after {
+  background-color: #a3d1ff;
+}
+body #edit #sound-edit .one-se-edit .se-colors label:nth-child(7) input:after {
+  background-color: #a3ffff;
+}
+body #edit #sound-edit .one-se-edit .se-colors label:nth-child(8) input:after {
+  background-color: #a3ffd1;
+}
+body #edit #sound-edit .one-se-edit .se-colors label:nth-child(9) input:after {
+  background-color: #a3ffa3;
+}
+body #edit #sound-edit .one-se-edit .se-colors label:nth-child(10) input:after {
+  background-color: #d1ffa3;
+}
+body #edit #sound-edit .one-se-edit .se-colors label:nth-child(11) input:after {
+  background-color: #ffffa3;
+}
+body #edit #sound-edit .one-se-edit .se-colors label:nth-child(12) input:after {
+  background-color: #ffd1a3;
+}
+body aside {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+body aside #btns div {
+  width: 45px;
+  height: 45px;
+  background-color: aquamarine;
+  border-radius: 50%;
+  user-select: none;
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body aside #btns div a {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body aside #btns div a img {
+  width: 25px;
+  height: 25px;
+  margin: 0 auto;
+  line-height: 45px;
+}
+body aside #btns #logo {
+  height: 100px;
+  border-radius: 22.5px;
+  margin: 0;
+}
+body aside #btns #logo h1 {
+  margin: 0;
+}

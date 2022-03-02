@@ -1,0 +1,178 @@
+// 全パーツCSS
+body {
+    margin: 0;
+}
+
+img {
+    vertical-align: top;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', 'Noto Sans JP', sans-serif;
+}
+
+body {
+    background-color: aliceblue;
+
+    // index
+    #top {
+        display: flex;
+        align-items: center;
+
+        // 効果音ボタン
+        #sound-btns {
+            width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+
+            label {
+                display: flex;
+                width: 170px;
+                height: 170px;
+                border-radius: 8px;
+                user-select: none;
+                justify-content: center;
+                align-items: center;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                input {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    // edit
+    #edit {
+        #sound-edit {
+            .one-se-edit {
+                .se-colors {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+
+                    label {
+                        width: 29px;
+                        height: 13px;
+                        display: flex;
+                        align-items: center;
+
+                        input {
+                            margin: 0;
+
+                            &:after {
+                                content: "";
+                                display: block;
+                                width: 13px;
+                                height: 13px;
+                                margin-left: 15px;
+                            }
+                        }
+
+                        &:nth-child(1)input:after {
+                            background-color: #ffa3a3;
+                        }
+
+                        &:nth-child(2)input:after {
+                            background-color: #ffa3d1;
+                        }
+
+                        &:nth-child(3)input:after {
+                            background-color: #ffa3ff;
+                        }
+
+                        &:nth-child(4)input:after {
+                            background-color: #d1a3ff;
+                        }
+
+                        &:nth-child(5)input:after {
+                            background-color: #a3a3ff;
+                        }
+
+                        &:nth-child(6)input:after {
+                            background-color: #a3d1ff;
+                        }
+
+                        &:nth-child(7)input:after {
+                            background-color: #a3ffff;
+                        }
+
+                        &:nth-child(8)input:after {
+                            background-color: #a3ffd1;
+                        }
+
+                        &:nth-child(9)input:after {
+                            background-color: #a3ffa3;
+                        }
+
+                        &:nth-child(10)input:after {
+                            background-color: #d1ffa3;
+                        }
+
+                        &:nth-child(11)input:after {
+                            background-color: #ffffa3;
+                        }
+
+                        &:nth-child(12)input:after {
+                            background-color: #ffd1a3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // サイドボタン
+    aside {
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+
+        #btns {
+            div {
+                width: 45px;
+                height: 45px;
+                background-color: aquamarine;
+                border-radius: 50%;
+                user-select: none;
+                margin-top: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                a {
+                    width: 45px;
+                    height: 45px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 25px;
+                        height: 25px;
+                        margin: 0 auto;
+                        line-height: 45px;
+                    }
+                }
+            }
+
+            #logo {
+                height: 100px;
+                border-radius: calc(45px / 2);
+                margin: 0;
+
+                h1 {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+doctype html
+html(lang="ja")
+  head
+    //- 言語・環境設定
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+
+    //- ページの内容
+    title SoundPush
+
+    include ../include/head.pug
+
+    //- OGP関連
+    meta(property="og:url" content="ページのURL")
+    meta(property="og:title" content="SoundPush")
+
+  body
+    main#top
+      #sound-btns
+    aside
+      #btns
+        #logo
+          h1
+            img(src="")
+        #edit
+          a(href="edit.html")
+            img(src="img/edit-icon.svg")
+        #setting
+          a(href="setting.html")
+            img(src="img/settings-icon.svg")
+    script(src="js/index.js")
+    script(src="js/style.js")
